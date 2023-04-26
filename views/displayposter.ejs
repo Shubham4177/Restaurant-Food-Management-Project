@@ -1,0 +1,11 @@
+<html><center>
+    <form action="/food/edit_poster" method="post" enctype="multipart/form-data">
+<input type="hidden" name="fdid" value="<%=data.fdid %>">
+<h1><%=data.fooditem %></h1><br><br>
+<img src="/images/<%=data.poster %> " width="350" alt=""><br><br>
+<b>Upload New Poster</b><br><br>
+<input type="file" required name="poster">
+<input type="submit" value="Upload Image">
+
+    </form>
+</center></html>
